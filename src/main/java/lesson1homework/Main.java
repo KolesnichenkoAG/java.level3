@@ -7,7 +7,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        Integer[] intArr = {1, 2, 3, 4, 5};
+        Integer[] intArr = {1, 2, 3, 4, 5, 6, 7};
         Double[] doubleArr = {1.1, 1.2, 1.3, 1.4};
 
         System.out.println(Arrays.toString(intArr));
@@ -18,15 +18,15 @@ public class Main {
 
         System.out.println("Большая задача");
         Box<Apple> boxApples = new Box<>(new ArrayList<>());
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 6; i++) {
             boxApples.addFruit(new Apple());
         }
         Box<Apple> boxApples2 = new Box<>(new ArrayList<>());
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 7; i++) {
             boxApples2.addFruit(new Apple());
         }
         Box<Orange> boxOranges = new Box<>(new ArrayList<>());
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 4; i++) {
             boxOranges.addFruit(new Orange());
         }
         System.out.println(boxApples.getWeight());
